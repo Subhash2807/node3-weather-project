@@ -32,7 +32,7 @@ app.get('/weather',(req,res) => {
             })
         }
         else{
-            weather(lon,lat,(error,temp,name)=>{
+            weather(lon,lat,(error,temp,name,humidity)=>{
                 if(error)
                 {
                     return res.send({
@@ -41,7 +41,8 @@ app.get('/weather',(req,res) => {
                 }
                 res.send({
                     location:name,
-                    temp
+                    temp,
+                    humidity
                 });
             })
         }

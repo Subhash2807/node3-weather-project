@@ -7,7 +7,10 @@ body {
 
     display: flex;
     flex-direction: column;
-    min-height: 100vh
+    min-height: 100vh;
+    font-family: sans-serif;
+    background-color: azure;
+    
 }
 
 .main-content {
@@ -43,4 +46,21 @@ header a {
 
 h1 {
     color :green
+}
+
+button{
+    border-radius: 10%;
+    background-color: aquamarine;
+    height: 30px;
+    width: 60px;
+    outline: none;
+    border:none;
+    box-shadow: 3px 4px 4px rgb(123, 226, 178);
+}
+input{
+    height: 30px;
+    width: 200px;
+    text-align: center;
+    font-size: medium;
+    font-family: sans-serif;
 }

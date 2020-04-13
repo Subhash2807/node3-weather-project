@@ -21,8 +21,11 @@ weatherForm.addEventListener('submit',(e)=>{
             else
             {
                 // console.log(data.location,data.temp);
-                messageOne.textContent = 'Location: '+data.location;
-                messageTwo.textContent = 'Temp: '+data.temp;
+                // messageOne.textContent = 'Location: '+data.location;
+                // messageTwo.textContent = 'Temp: '+data.temp;
+                var str = 'o';
+                str = str.sup();
+                messageOne.innerHTML = `The temperature of ${data.location} is ${Math.round(data.temp)}${str}C and the humidity is around ${data.humidity}%`
             }
         })
     })
