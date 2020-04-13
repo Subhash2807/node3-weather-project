@@ -5,6 +5,8 @@ const weather = require('./utils/weather');
 const getCoordinates = require('./utils/coordinates')
 
 const app = express();
+const port = process.env.PORT || 3000
+
 var viewsPath = path.join(__dirname,'../templates/views')
 var partialsPath = path.join(__dirname,'../templates/partials')
 
@@ -95,7 +97,7 @@ app.get('*',(req,res)=>{
     })
 })
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log('the server is started on port 3000')
 })
 
