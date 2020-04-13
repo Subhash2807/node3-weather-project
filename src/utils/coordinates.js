@@ -8,12 +8,11 @@ const getCoordinates = (city,callback) => {
     request({url,json:true,proxy:'http://10.10.12.2:8080'},(err,res,body)=> {
     if(err)
     {
-        // console.log(chalk.red('error internet is not working'))
         callback('error internet is not working',undefined,undefined);
     }
     else if(body.features.length === 0)
     {
-        // console.log(chalk.blue('city is not found'));
+        
         callback('city is not found',undefined,undefined);
     }
     else{
