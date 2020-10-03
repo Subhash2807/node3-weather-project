@@ -26,6 +26,7 @@ weatherForm.addEventListener('submit',(e)=>{
                 var str = 'o';
                 str = str.sup();
                 messageOne.innerHTML = `The temperature of ${data.location} is ${Math.round(data.temp)}${str}C and the humidity is around ${data.humidity}%`
+//          messageOne.innerHTML = `The temperature of ${data.location} is ${Math.round(data.temp)}${str}C and the humidity is around ${data.humidity}%`  
             }
         })
     })
